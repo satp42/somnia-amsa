@@ -1,0 +1,28 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "jsx": "preserve",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"],
+      "@somnia-amsa/ui": ["../../packages/ui"],
+      "@somnia-amsa/ui/*": ["../../packages/ui/*"],
+      "@somnia-amsa/config": ["../../packages/config"],
+      "@somnia-amsa/config/*": ["../../packages/config/*"],
+      "@somnia-amsa/sdk": ["../../packages/sdk/src"],
+      "@somnia-amsa/sdk/*": ["../../packages/sdk/src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
+

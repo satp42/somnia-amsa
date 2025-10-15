@@ -1,0 +1,4 @@
+{
+  "extends": ["@somnia-amsa/eslint-config"]
+}
+

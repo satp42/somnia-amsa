@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["ES2020"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@somnia-amsa/ui": ["./packages/ui"],
+      "@somnia-amsa/ui/*": ["./packages/ui/*"],
+      "@somnia-amsa/config": ["./packages/config"],
+      "@somnia-amsa/config/*": ["./packages/config/*"],
+      "@somnia-amsa/sdk": ["./packages/sdk/src"],
+      "@somnia-amsa/sdk/*": ["./packages/sdk/src/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "build", ".next", "out"]
+}
+

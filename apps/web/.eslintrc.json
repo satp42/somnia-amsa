@@ -1,0 +1,12 @@
+{
+  "extends": ["@somnia-amsa/eslint-config"],
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}
+

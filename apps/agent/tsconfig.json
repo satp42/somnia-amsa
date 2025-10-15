@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "noEmit": false,
+    "paths": {
+      "@somnia-amsa/config": ["../../packages/config"],
+      "@somnia-amsa/config/*": ["../../packages/config/*"],
+      "@somnia-amsa/sdk": ["../../packages/sdk/src"],
+      "@somnia-amsa/sdk/*": ["../../packages/sdk/src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
+

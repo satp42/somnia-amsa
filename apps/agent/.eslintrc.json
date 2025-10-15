@@ -1,0 +1,7 @@
+{
+  "extends": ["@somnia-amsa/eslint-config"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}
+
